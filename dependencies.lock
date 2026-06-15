@@ -1,0 +1,30 @@
+dependencies:
+  can_common:
+    component_hash: 0fb65f5d38104ce002632dd3bc5fbde0ff3d458aa11a65804e2de7a288d37e9a
+    dependencies: []
+    source:
+      git: ssh://git@github.com/trailcurrentoss/TrailCurrentCANLibrary.git
+      path: can_common
+      type: git
+    version: 1bfdfecefff2d53850bfd34924dc2c0a4acbafc3
+  espressif/mdns:
+    component_hash: 1ebe3bd675bb9d1c58f52bc0b609b32f74e572b01c328f9e61282040c775495c
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=5.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.11.0
+  idf:
+    source:
+      type: idf
+    version: 5.5.4
+direct_dependencies:
+- can_common
+- espressif/mdns
+- idf
+manifest_hash: 872b6f0dd8a3554c19ed915dc0391a86beb8f291ee205167f6041f4c4db54fa8
+target: esp32s3
+version: 2.0.0

@@ -1,0 +1,8 @@
+## IDF Component Manager Manifest File
+dependencies:
+  idf:
+    version: '>=4.1.0'
+  espressif/mdns: '*'
+  can_common:
+    path: can_common
+    git: ssh://git@github.com/trailcurrentoss/TrailCurrentCANLibrary.git
